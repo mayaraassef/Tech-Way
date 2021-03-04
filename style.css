@@ -1,0 +1,271 @@
+
+html, body {
+    overflow-x: hidden;
+  }
+
+body {
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: 5px;
+    background-color: black;
+    overflow-x: hidden;
+    position: relative;
+    
+}
+.navbar-brand span {
+    color: white;
+}
+
+.navbar-brand i {
+    color: white;
+}
+
+
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 2px;
+    margin-left: 80px;
+    letter-spacing: 2px;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    background: rgb(250, 250, 246);
+    border-radius: 10px;
+}
+
+
+.showcase {
+    position: relative;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    z-index: 2;
+}
+
+.showcase header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(18, 157, 192);
+    mix-blend-mode: overlay;
+}
+.text {
+    position: absolute;
+    z-index: 10;
+}
+
+.box, .login{
+    padding: 20px;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    letter-spacing: normal;
+    font-weight:900;
+}
+
+.nossos-cursos, .depoimentos, .form {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+
+.nossos-cursos{
+    background-image: url(imagens/imagem3.png);
+}
+
+.depoimentos {
+    background-image: url(imagens/imagem1.jpg);
+}
+.col-md-3 {
+    padding: 20px;
+}
+.img-fluid {
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+.form{
+    background-image: url(imagens/imagem2.jpg);
+}
+.login {
+    position: absolute;
+    left: 60%;
+    margin-top: 20%;
+    background: rgba(18, 157, 192, 0.26);
+    color: blueviolet;
+}
+
+.login h3 {
+    border-bottom: 4px solid rgb(18, 157, 192);
+}
+.login input {
+    margin: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid rgb(18, 157, 192);
+    
+}
+
+.botao {
+    background-color: blueviolet;
+    margin-left: 50px;
+    font-weight: 900;
+}
+
+::-webkit-input-placeholder {
+    color: black;
+ }
+  
+ :-moz-placeholder { /* Firefox 18- */
+    color: black;  
+ }
+  
+ ::-moz-placeholder {  /* Firefox 19+ */
+    color: black;  
+ }
+  
+ :-ms-input-placeholder {  
+    color: black;  
+ }
+
+
+
+.img-fluid:hover {
+    -moz-transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    -moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.pessoa {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    text-align: center;
+    margin-left: 37px;
+    
+}
+
+.pessoa:hover {
+    transform: none;
+}
+.titulo {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+
+.conteudo {
+   
+    background:rgba(1, 74, 92, 0.623);
+    padding: 15px;
+    border-radius: 15px;
+    
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    letter-spacing: normal;
+    font-weight:900;
+}
+
+
+[data-anime] {
+    opacity: 0;
+    transition: 8s;
+}
+
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+
+@media(max-width:767px){
+    .navbar-collapse, .collapse{
+        position: absolute;
+        top: 60%;
+        left: 5%;
+        
+    }
+
+    .navbar-toggler{
+        position: absolute;
+        left: 90%;
+    }
+
+    .text{
+        position: absolute;
+        top: 50%;
+        
+    }
+
+    .login{
+        left: 10%;
+        margin-top: 40%;
+        }
+        .img-fluid:hover{
+            transition: none;
+        }
+}
+
+@media(max-width: 992px){
+    body{
+        font-size: 20px;
+    }
+
+    .pessoa {
+        margin-left: 2px;
+    }
+    .conteudo p {
+        margin: 0;
+        
+    }
+}
